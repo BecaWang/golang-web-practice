@@ -7,6 +7,7 @@ import (
 	"net/http"
 )
 
+//InputHandler input
 func InputHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
 		t, err := template.ParseFiles("index.html")
